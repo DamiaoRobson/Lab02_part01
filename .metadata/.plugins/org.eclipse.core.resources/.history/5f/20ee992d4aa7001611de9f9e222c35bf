@@ -1,0 +1,20 @@
+package lojaop2;
+
+import java.util.Scanner;
+
+public class ComprasLojaoP2 {
+
+	
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in); 
+
+		int qtdProdutos = sc.nextInt();sc.nextLine();
+		String[] nomeProduto = new String[qtdProdutos];
+		double[] precoProduto = new double[qtdProdutos];
+		
+		
+		
+	}
+
+}

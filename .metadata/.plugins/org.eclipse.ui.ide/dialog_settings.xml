@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/home/damiaord/unit_6"/>
+		<item value="/home/damiaord/workspace/RemoteSystemsTempFiles/Jogogo_Do_Heroi"/>
+		<item value="/home/damiaord/workspace/Jogo_Do_Heroi"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/damiaord/workspace/Projeto-HUG/M1_Matheus_115210754_Adisio_Damiao_Lucas_Wendell"/>
+			<item value="/home/damiaord/workspace/projetolp2"/>
+			<item value="/home/damiaord/workspace/projetolp2/M1_Matheus_115210754_Adisio_Damiao_Lucas_Wendell"/>
+			<item value="/home/damiaord/workspace/projeto_Lp2/M1_Matheus_115210754_Adisio_Damiao_Lucas_Wendell"/>
+			<item value="/home/damiaord/workspace/lab06"/>
+			<item value="/home/damiaord/workspace/Damiao_115210834_Lab04"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="ResourceNavigator">
+		<item value="Aggregate for window 1469547630006" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
+		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="592" key="DIALOG_X_ORIGIN"/>
+		<item value="330" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

@@ -1,0 +1,54 @@
+package lab04;
+
+public class Musica {
+
+	private String titulo;
+	private int duracao;
+	private String genero;
+
+	// Construtor
+	public Musica(String nome, int duracao, String genero) {
+		this.titulo = nome;
+		this.duracao = duracao;
+		this.genero = genero;
+	}
+
+	@Override
+	public boolean equals(Object nomeMusica) {
+		if (nomeMusica instanceof Musica) {
+			Musica musica = (Musica) nomeMusica;
+			return this.getTitulo().equalsIgnoreCase(musica.getTitulo()) && this.getDuracao() == musica.getDuracao();
+		}
+		return false;
+	}
+
+	@Override
+	public String toString() {
+		return String.format("%s (%s - %d minutos)", this.getTitulo(), this.getGenero(), this.getDuracao());
+	}
+
+	public String getTitulo() {
+		return this.titulo;
+	}
+
+	public void setNome(String nome) {
+		this.titulo = nome;
+	}
+
+	public int getDuracao() {
+		return this.duracao;
+	}
+
+	public void setDuracao(int duracao) {
+		this.duracao = duracao;
+	}
+
+	public String getGenero() {
+		return this.genero;
+	}
+
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;gamevicio.LojaP2_CGFachada&apos; to &apos;GameVicioFachada&apos;&#x0A;- Original project: &apos;lab06&apos;&#x0A;- Original element: &apos;gamevicio.LojaP2_CGFachada&apos;&#x0A;- Renamed element: &apos;gamevicio.GameVicioFachada&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;LojaP2_CGFachada&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;gamevicio{LojaP2_CGFachada.java[LojaP2_CGFachada" matchStrategy="1" name="GameVicioFachada" qualified="false" references="true" similarDeclarations="false" stamp="1471980644961" textual="false" version="1.0"/>
+</session>

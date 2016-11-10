@@ -1,0 +1,156 @@
+package hospede;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import cartao_fidelidade.Cartao;
+import easyaccept.EasyAccept;
+import excecoes.AnoInvalidoException;
+import excecoes.StringInvalidaException;
+
+/**
+ * 
+ * @author Adisio Pereira FIalho Junior
+ * @author Damiao Robson Domiciano
+ * @author Lucas Duarte
+ * @author Wendell Stanley Araujo Rocha
+ *
+ */
+
+public class Hospede {
+
+	private String nome;
+	private String email;
+	private String anoNascimento;
+
+	/**
+	 * O construtor Hospede inicializa duas variaveis de instancia como duas
+	 * Strings(nome, email) e uma como int(anoNascimento)
+	 * 
+	 * @param nome
+	 * @param email
+	 * @param anoNascimento2
+	 * @throws StringInvalidaException
+	 * @throws AnoInvalidoException
+	 */
+	public Hospede(String nome, String email, String anoNascimento2) throws StringInvalidaException {
+
+		this.nome = nome;
+		this.email = email;
+		this.anoNascimento = anoNascimento2;
+		Cartao cartao = new Cartao(nome, 0);
+	}
+
+	/**
+	 * Obtem o nome do Hospede.
+	 * 
+	 * @return uma <code>String</code> especificando o nome do Hospede.
+	 */
+	public String getNome() {
+		return nome;
+	}
+
+	/**
+	 * Configura o nome do Hospede.
+	 * 
+	 * @param nome
+	 */
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	/**
+	 * 
+	 * @return uma <code>String</code> especificando o email do Hospede.
+	 */
+	public String getEmail() {
+		return email;
+	}
+
+	/**
+	 * Configura o email do Hospede.
+	 * 
+	 * @param email
+	 */
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	/**
+	 * 
+	 * @return um <code>Integer</code> especificando o ano de nascimento do
+	 *         Hospede.
+	 */
+	public String getAnoNascimento() {
+		return anoNascimento;
+	}
+
+	/**
+	 * Configura o ano de nascimento do Hospede
+	 * 
+	 * @param anoNascimento
+	 */
+	public void setAnoNascimento(String anoNascimento) {
+		this.anoNascimento = anoNascimento;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((anoNascimento == null) ? 0 : anoNascimento.hashCode());
+		result = prime * result + ((email == null) ? 0 : email.hashCode());
+		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Hospede other = (Hospede) obj;
+		if (anoNascimento == null) {
+			if (other.anoNascimento != null)
+				return false;
+		} else if (!anoNascimento.equals(other.anoNascimento))
+			return false;
+		if (email == null) {
+			if (other.email != null)
+				return false;
+		} else if (!email.equals(other.email))
+			return false;
+		if (nome == null) {
+			if (other.nome != null)
+				return false;
+		} else if (!nome.equals(other.nome))
+			return false;
+		return true;
+	}
+
+	public String getInfoHospede(String tipoInformacao) throws Exception {
+		if (tipoInformacao == null || tipoInformacao.trim().isEmpty()) {
+			throw new StringInvalidaException("tipo da informacao nao pode ser nulo ou vazio");
+		}
+		if (tipoInformacao.equalsIgnoreCase("Nome")) {
+			return this.getNome();
+		} else if (tipoInformacao.equalsIgnoreCase("Email")) {
+			return this.getEmail();
+		} else if (tipoInformacao.equalsIgnoreCase("Data de Nascimento")) {
+			return this.getAnoNascimento();
+		} else if (tipoInformacao.equalsIgnoreCase("Pontos")) {
+			return this.getAnoNascimento();
+		} else {
+			throw new Exception("Informacao invalida");
+		}
+
+	}
+
+}

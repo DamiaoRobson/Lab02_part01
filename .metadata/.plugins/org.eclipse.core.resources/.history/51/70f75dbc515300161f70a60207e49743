@@ -1,0 +1,34 @@
+package jogo;
+
+import java.util.ArrayList;
+
+public class Mochila {
+	
+	private double pesoItens;
+	private int danoItem;
+	private double pesoMax;
+	private ArrayList<Item> itens;
+
+	// contrutor
+	public Mochila(double pesoMax) {
+		this.pesoMax = pesoMax;
+		pesoItens = 0;
+		itens = new ArrayList<Item>();
+	}
+
+
+	public boolean guardarItem(Item item){
+		if((pesoItens + item.getPeso()) <= pesoMax){
+			
+			return itens.add(item);
+		}
+	return false;
+	}
+
+	
+	public double getPeso() {
+		return pesoMax;
+	}
+
+
+}

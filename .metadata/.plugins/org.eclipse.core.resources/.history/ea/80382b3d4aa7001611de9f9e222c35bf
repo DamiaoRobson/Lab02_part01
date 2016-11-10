@@ -1,0 +1,27 @@
+package lojaop2;
+
+/**
+ * @author Damiao Robson Mat:116210003
+ */
+
+import java.util.Scanner;
+
+public class ComprasLojaoP2 {
+
+	
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in); 
+
+		int qtdProdutos = sc.nextInt();sc.nextLine();
+		String[] nomeProduto = new String[qtdProdutos];
+		int[] qtdItem = new int[qtdProdutos];
+		
+		for (int i = 0; i < qtdProdutos; i++) {
+			nomeProduto[i] = sc.nextLine();
+			qtdItem[i] = sc.nextInt();sc.nextLine();
+		}
+		
+	}
+
+}
