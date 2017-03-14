@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/home/damiaord/workspace/Lab02.02"/>
 		<item value="/home/damiaord/unit_6"/>
 		<item value="/home/damiaord/workspace/RemoteSystemsTempFiles/Jogogo_Do_Heroi"/>
 		<item value="/home/damiaord/workspace/Jogo_Do_Heroi"/>
@@ -10,6 +11,13 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/damiaord/workspace/Central-de-Projetos-da-Computa-o-UFCG/centralProjetos"/>
+			<item value="/home/damiaord/workspace/Central-de-Projetos-da-Computa-o-UFCG"/>
+			<item value="/home/damiaord/workspace/Lab_06_DamiaoDomiciano"/>
+			<item value="/home/damiaord/workspace/Lab05"/>
+			<item value="/home/damiaord/workspace/Lab03"/>
+			<item value="/home/damiaord/workspace/Damiao_116210003_Lab02P01"/>
+			<item value="/home/damiaord/workspace/Lab02.02"/>
 			<item value="/home/damiaord/workspace/Projeto-HUG/M1_Matheus_115210754_Adisio_Damiao_Lucas_Wendell"/>
 			<item value="/home/damiaord/workspace/projetolp2"/>
 			<item value="/home/damiaord/workspace/projetolp2/M1_Matheus_115210754_Adisio_Damiao_Lucas_Wendell"/>
@@ -24,6 +32,10 @@
 	<section name="ResourceNavigator">
 		<item value="Aggregate for window 1469547630006" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
 		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
 	</section>
 	<section name="NewWizardAction">
 	</section>

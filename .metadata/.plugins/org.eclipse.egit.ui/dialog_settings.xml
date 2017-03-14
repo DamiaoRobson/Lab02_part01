@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="0" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
-	<item value="/home/damiaord/git/LP-2/.git" key="GitSelectRepositoryPage.lastRepository"/>
+	<item value="/home/damiaord/workspace/.git" key="GitSelectRepositoryPage.lastRepository"/>
 	<list key="RepositorySelectionPage.UsedUris">
 		<item value="https://github.com/DamiaoRobson/LP-2.git"/>
 	</list>
